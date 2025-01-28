@@ -45,11 +45,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     background-color: #3b5160;
     z-index: 101;
     border-radius: 5px;
+    display: flex;           /* Agregado para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
 }
 
 .jersey-15-regular {
@@ -87,29 +90,31 @@ body {
 }
 
 input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
+    padding: 0.5vw;      /* Padding relativo */
+    font-size: 1vw;      /* Tamaño de fuente relativo */
     border-radius: 3px;
     border: none;
     outline: none;
     background-color: #332b31;
     border: 2px solid #ffffff;
     color: white;
-    width: 80%;  /* Ancho relativo al contenedor */
+    width: 80%;
+    height: 2vw;         /* Alto relativo */
 }
 
 .CheckButton {
     font-family: "Jersey 15", serif;
-    padding: 8px 15px;
-    font-size: 16px;
+    padding: 0.5vw 1vw;  /* Padding relativo */
+    font-size: 1vw;      /* Tamaño de fuente relativo */
     border-radius: 3px;
     border: none;
     width: 60%;
+    height: 2.5vw;       /* Alto relativo */
     white-space: nowrap;
-    background-color: #4CAF50;  /* Color base del botón */
+    background-color: #4CAF50;
     color: white;
-    transition: all 0.3s ease;  /* Suaviza todas las transiciones */
-    cursor: pointer;  /* Cambia el cursor a pointer al pasar por encima */
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .CheckButton:hover {
@@ -128,24 +133,25 @@ input[type="text"] {
     right: 13%;
 }
 
-.resetButton{
+.resetButton {
     font-family: "Jersey 15", serif;
-    padding: 8px 15px;
-    font-size: 16px;
+    padding: 0.5vw 1vw;  /* Padding relativo */
+    font-size: 1vw;      /* Tamaño de fuente relativo */
     border-radius: 3px;
     position: relative;
     top: -40%;
-    right: 65%;
+    right: 63%;
     background-color: red;
     color: white;
     border: 2px solid #ffffff;
-
+    width: 8vw;          /* Ancho relativo */
+    height: 3vw;         /* Alto relativo */
 }
 
-.resetButton:hover{
-    background-color: #d6a622;  /* Color más oscuro al hacer hover */
-    transform: scale(1.1);      /* Hace el botón un poco más grande */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Agrega sombra */
+.resetButton:hover {
+    background-color: #d6a622;  
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .ResultBox {
@@ -183,4 +189,12 @@ input[type="text"] {
   position: relative;
   top: 35%;
   right: -40%;
+}
+
+.centerText {
+    color: white;
+    font-family: "Jersey 15", serif;
+    font-size: 5vw;         /* Tamaño relativo para el ? */
+    margin: 0;              /* Elimina márgenes por defecto */
+    padding: 0;             /* Elimina padding por defecto */
 }
